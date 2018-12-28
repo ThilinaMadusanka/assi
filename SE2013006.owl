@@ -1,0 +1,1001 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/asus/ontologies/2018/11/assignment"
+     xml:base="http://www.semanticweb.org/asus/ontologies/2018/11/assignment"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:assignment="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#hasAchievement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#hasAchievement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Achievements"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#hasDone -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#hasDone">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Projects"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#hasSkill -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#hasSkill">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Skill"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#isLocatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#isLocatedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#City"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#District"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#isPartOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#District"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#liveIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#liveIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#placedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#placedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#EducationInstitutes"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Organization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#referedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#referedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#ReferencePerson"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#studiedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#studiedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#EducationInstitutes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#workedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#workedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#achievementDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#achievementDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Achievements"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#achievementName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#achievementName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Achievements"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#advancedLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#advancedLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#School"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#cityName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#cityName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#City"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#contactNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#contactNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#countryName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#countryName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#dateOfBirth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#dateOfBirth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#degreeName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#degreeName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#University"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#discription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#discription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#districtName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#districtName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#District"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#educationAchievementName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#educationAchievementName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Education"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#eventName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#eventName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#sportName"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Sports"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#gender">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#instituteName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#instituteName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#EducationInstitutes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#jobTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#jobTitle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#nationality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#nationality">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#nic -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#nic">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#odinaryLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#odinaryLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#School"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#organizationName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#organizationName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#personName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#personName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#position -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#position">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#ReferencePerson"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#projectDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#projectDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Projects"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#projectName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#projectName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Projects"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skillLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skillLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Skill"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skillName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skillName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Skill"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#sportName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#sportName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Sports"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#workEndDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#workEndDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#workStartDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#workStartDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Achievements -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Achievements"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#District -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#District">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Education -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Education">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Achievements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#EducationInstitutes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#EducationInstitutes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#LanguageSkill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#LanguageSkill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Organization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Organization"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Place"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Projects -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Projects"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#ReferencePerson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#ReferencePerson">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#School -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#School">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#EducationInstitutes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Skill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Skill"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#SoftSkill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#SoftSkill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Sports -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Sports">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Achievements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#TechnicalSkill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#TechnicalSkill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Skill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#University -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#University">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#EducationInstitutes"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#education-hack -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#education-hack">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Achievements"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Education"/>
+        <assignment:achievementDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2018</assignment:achievementDate>
+        <assignment:achievementName>Participation</assignment:achievementName>
+        <assignment:educationAchievementName>Real Hack Competition</assignment:educationAchievementName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#organization-metalanka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#organization-metalanka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Organization"/>
+        <assignment:placedIn rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#place-organization"/>
+        <assignment:jobTitle>Trainee Software Engineer</assignment:jobTitle>
+        <assignment:organizationName>Metatechno Lanka (pvt)Ltd</assignment:organizationName>
+        <assignment:workEndDate>2017.03.30</assignment:workEndDate>
+        <assignment:workStartDate>2016.09.14</assignment:workStartDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#person-referencePerson-chamli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#person-referencePerson-chamli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#ReferencePerson"/>
+        <assignment:liveIn rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#place-referencePerson-chamli"/>
+        <assignment:contactNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0715147879</assignment:contactNumber>
+        <assignment:email>chamli@kln.ac.lk</assignment:email>
+        <assignment:personName>Dr. Chamli Pushpakumara</assignment:personName>
+        <assignment:position>Head of the Department, Department of Applied Computing, Faculty of Computing and Technology, University of Kelaniya</assignment:position>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#person-referencePerson-gamini -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#person-referencePerson-gamini">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#ReferencePerson"/>
+        <assignment:liveIn rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#place-referencePerson-gamini"/>
+        <assignment:contactNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0714449227</assignment:contactNumber>
+        <assignment:email>gamini@kln.ac.lk</assignment:email>
+        <assignment:personName>Dr.Gamini Wijayarathna</assignment:personName>
+        <assignment:position>Dean, Faculty of Computing and Technology,University of Kelaniya</assignment:position>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#person-student -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#person-student">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Student"/>
+        <assignment:hasAchievement rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#education-hack"/>
+        <assignment:hasAchievement rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#sports-swimming"/>
+        <assignment:hasDone rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#project-LMS"/>
+        <assignment:hasDone rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#project-OTRequirementManagementSystem"/>
+        <assignment:hasDone rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#project-SIS"/>
+        <assignment:hasDone rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#project-WindosService"/>
+        <assignment:hasSkill rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-CSharp"/>
+        <assignment:hasSkill rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-angula"/>
+        <assignment:hasSkill rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-asp.net"/>
+        <assignment:hasSkill rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-bootstrap"/>
+        <assignment:hasSkill rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-css"/>
+        <assignment:hasSkill rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-english"/>
+        <assignment:hasSkill rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-html"/>
+        <assignment:hasSkill rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-java"/>
+        <assignment:hasSkill rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-javaScript"/>
+        <assignment:hasSkill rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-leadership"/>
+        <assignment:hasSkill rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-motivationAndCommitment"/>
+        <assignment:hasSkill rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-mssql-mysql"/>
+        <assignment:hasSkill rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-problemSolving"/>
+        <assignment:hasSkill rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-sinhala"/>
+        <assignment:hasSkill rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-workUnderPressure"/>
+        <assignment:liveIn rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#place-student"/>
+        <assignment:referedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#person-referencePerson-chamli"/>
+        <assignment:referedBy rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#person-referencePerson-gamini"/>
+        <assignment:studiedIn rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#school-ICC"/>
+        <assignment:studiedIn rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#school-TMV"/>
+        <assignment:studiedIn rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#university-UOK"/>
+        <assignment:workedIn rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#organization-metalanka"/>
+        <assignment:contactNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0717226113</assignment:contactNumber>
+        <assignment:dateOfBirth>1992.03.23</assignment:dateOfBirth>
+        <assignment:discription>I am a highly motivated and hardworking individual with more energetic and confident. I am a strong developer with smooth capabilities in software engineering field and passionate to learn new technologies and concepts that are used in the IT industry. Also, I’m seeking challenges in Software Development Sector to get a position of responsibility, using my skills and efficiency with communicating my ideas and views</assignment:discription>
+        <assignment:email>thilinamadusankab323@gmail.com</assignment:email>
+        <assignment:gender>Male</assignment:gender>
+        <assignment:nationality>Sri Lankan</assignment:nationality>
+        <assignment:nic>920832121V</assignment:nic>
+        <assignment:personName>IMTM Basnayaka</assignment:personName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#place-organization -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#place-organization">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#City"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Country"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#District"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Place"/>
+        <assignment:cityName>Gangarama</assignment:cityName>
+        <assignment:countryName>Sri Lanka</assignment:countryName>
+        <assignment:districtName>Colombo</assignment:districtName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#place-referencePerson-chamli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#place-referencePerson-chamli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#City"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Country"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#District"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Place"/>
+        <assignment:cityName>Dalugama</assignment:cityName>
+        <assignment:countryName>Sri Lanka</assignment:countryName>
+        <assignment:districtName>Gampaha</assignment:districtName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#place-referencePerson-gamini -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#place-referencePerson-gamini">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#City"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Country"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#District"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Place"/>
+        <assignment:cityName>Dalugama</assignment:cityName>
+        <assignment:countryName>Sri Lanka</assignment:countryName>
+        <assignment:districtName>Gampaha</assignment:districtName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#place-school-al -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#place-school-al">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#City"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Country"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#District"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Place"/>
+        <assignment:cityName>Ibbagamuwa</assignment:cityName>
+        <assignment:countryName>Sri Lanka</assignment:countryName>
+        <assignment:districtName>Kurunegala</assignment:districtName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#place-school-ol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#place-school-ol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#City"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Country"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#District"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Place"/>
+        <assignment:cityName>Maho</assignment:cityName>
+        <assignment:countryName>Sri Lanka</assignment:countryName>
+        <assignment:districtName>Kurunegala</assignment:districtName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#place-student -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#place-student">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#City"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Country"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#District"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Place"/>
+        <assignment:cityName>Mediyawa, Maho</assignment:cityName>
+        <assignment:countryName>Sri Lanka</assignment:countryName>
+        <assignment:districtName>Kurunegala</assignment:districtName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#place-university -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#place-university">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#City"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Country"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#District"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Place"/>
+        <assignment:cityName>Dalugama</assignment:cityName>
+        <assignment:countryName>Sri Lanka</assignment:countryName>
+        <assignment:districtName>Gampaha</assignment:districtName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#project-LMS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#project-LMS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Projects"/>
+        <assignment:projectDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</assignment:projectDate>
+        <assignment:projectName>Library Management System</assignment:projectName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#project-OTRequirementManagementSystem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#project-OTRequirementManagementSystem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Projects"/>
+        <assignment:projectDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</assignment:projectDate>
+        <assignment:projectName>OT Requirement Management System</assignment:projectName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#project-SIS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#project-SIS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Projects"/>
+        <assignment:projectDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</assignment:projectDate>
+        <assignment:projectName>Smart Identification System</assignment:projectName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#project-WindosService -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#project-WindosService">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Projects"/>
+        <assignment:projectDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</assignment:projectDate>
+        <assignment:projectName>Windows Service with Database Replicaton</assignment:projectName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#school-ICC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#school-ICC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#EducationInstitutes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#School"/>
+        <assignment:placedIn rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#place-school-al"/>
+        <assignment:advancedLevel>Chem-A, Phy-B, Com-Math-</assignment:advancedLevel>
+        <assignment:instituteName>Ibbagamuwa Cental College</assignment:instituteName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#school-TMV -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#school-TMV">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#EducationInstitutes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#School"/>
+        <assignment:placedIn rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#place-school-ol"/>
+        <assignment:instituteName>NW/M/Thumbullegama Maha Vidyalaya</assignment:instituteName>
+        <assignment:odinaryLevel>3A’s, 1 B’s, 4 C’s, 1 S</assignment:odinaryLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-CSharp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-CSharp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Skill"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#TechnicalSkill"/>
+        <assignment:skillLevel>75%</assignment:skillLevel>
+        <assignment:skillName>C#</assignment:skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-angula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-angula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Skill"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#TechnicalSkill"/>
+        <assignment:skillLevel>65%</assignment:skillLevel>
+        <assignment:skillName>Angula</assignment:skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-asp.net -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-asp.net">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Skill"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#TechnicalSkill"/>
+        <assignment:skillName>80%</assignment:skillName>
+        <assignment:skillName>Asp.Net</assignment:skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-bootstrap -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-bootstrap">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Skill"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#TechnicalSkill"/>
+        <assignment:skillLevel>70%</assignment:skillLevel>
+        <assignment:skillName>Bootstrap</assignment:skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-css -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-css">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Skill"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#TechnicalSkill"/>
+        <assignment:skillLevel>70%</assignment:skillLevel>
+        <assignment:skillName>CSS</assignment:skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-english -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-english">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#LanguageSkill"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Skill"/>
+        <assignment:skillLevel>Good</assignment:skillLevel>
+        <assignment:skillName>Proficiency in English language</assignment:skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-html -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-html">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Skill"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#TechnicalSkill"/>
+        <assignment:skillLevel>90%</assignment:skillLevel>
+        <assignment:skillName>HTML</assignment:skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-java -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-java">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Skill"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#TechnicalSkill"/>
+        <assignment:skillLevel>55%</assignment:skillLevel>
+        <assignment:skillName>Java</assignment:skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-javaScript -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-javaScript">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Skill"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#TechnicalSkill"/>
+        <assignment:skillLevel>70%</assignment:skillLevel>
+        <assignment:skillName>JavaScript</assignment:skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-leadership -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-leadership">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Skill"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#SoftSkill"/>
+        <assignment:skillLevel>90%</assignment:skillLevel>
+        <assignment:skillName>Leadership</assignment:skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-motivationAndCommitment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-motivationAndCommitment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Skill"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#SoftSkill"/>
+        <assignment:skillLevel>85%</assignment:skillLevel>
+        <assignment:skillName>Motivation and Commitment</assignment:skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-mssql-mysql -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-mssql-mysql">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Skill"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#TechnicalSkill"/>
+        <assignment:skillLevel>90%</assignment:skillLevel>
+        <assignment:skillName>MSSQL and MySQL</assignment:skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-problemSolving -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-problemSolving">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Skill"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#SoftSkill"/>
+        <assignment:skillLevel>85%</assignment:skillLevel>
+        <assignment:skillName>Problem solving</assignment:skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-sinhala -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-sinhala">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#LanguageSkill"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Skill"/>
+        <assignment:skillLevel>Native</assignment:skillLevel>
+        <assignment:skillName>Proficiency in Sinhala language</assignment:skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-workUnderPressure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#skill-workUnderPressure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Skill"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#SoftSkill"/>
+        <assignment:skillLevel>90%</assignment:skillLevel>
+        <assignment:skillName>Work under pressure</assignment:skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#sports-swimming -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#sports-swimming">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Achievements"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#Sports"/>
+        <assignment:achievementDate>2016,2017,2018</assignment:achievementDate>
+        <assignment:achievementName>Champions</assignment:achievementName>
+        <assignment:eventName>Inter faculty championship</assignment:eventName>
+        <assignment:sportName>Swimming</assignment:sportName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2018/11/assignment#university-UOK -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#university-UOK">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#EducationInstitutes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#University"/>
+        <assignment:placedIn rdf:resource="http://www.semanticweb.org/asus/ontologies/2018/11/assignment#place-university"/>
+        <assignment:degreeName>B.Sc.(Hons) in Software Engineering</assignment:degreeName>
+        <assignment:instituteName>University of Kelaniya</assignment:instituteName>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
